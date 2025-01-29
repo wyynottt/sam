@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css" title="" type="" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do You Like Me?</title>
+
+</head>
+<body>
+    <p onclick="alert('hey,Vass hapning')">@Anand</p>
+  <h1>Do you like me?</h1>
+  
+  <button  id="yesButton" onclick="showResponse()">Yes</button>
+  <button  id="noButton" onclick="moveNoButtonAndShowEmoji()">No</button>
+  
+  <div id="response"></div>
+  
+  <!-- Emoji displayed when No is clicked -->
+  <div id="emoji">
+ 
+  </div>
+
+  <script>
+    // Show response when "Yes" is clicked
+    function showResponse() {
+
+document.getElementById("response").innerText= "Yes I Knew It "  ;
+document. getElementById("yesButton").disabled=true;
+document.getElementById("noButton").disabled=true;
+    }
+
+    // Move "No" button to a random position and show an emoji when clicked
+    function moveNoButtonAndShowEmoji() {
+      var noButton = document.getElementById("noButton");
+      var randomX = Math.floor(Math.random() * (window.innerWidth - noButton.offsetWidth));
+      var randomY = Math.floor(Math.random() * (window.innerHeight - noButton.offsetHeight));
+      
+      noButton.style.position = 'absolute';
+      noButton.style.left = randomX + 'px';
+      noButton.style.top = randomY + 'px';
+
+      document.getElementById("emoji").style.display = "block";
+    }
+
+
+  </script>
+  
+</body>
+</html>

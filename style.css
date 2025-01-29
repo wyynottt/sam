@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+background: linear-gradient(to right, #1e3c72, #2a5298, #1e3c72);
+}
+
+h1 {
+font-size: 30px;
+background: linear-gradient(45deg, #ff6b6b, #f7b7a3, #6a5acd);
+background-clip: text;
+color: transparent;
+-webkit-background-clip: text;
+/* for Safari */
+}
+  
+button {
+padding: 10px 20px ;
+margin:20px;
+outline:none;
+background-color: transparent ;
+border:1px solid white ;
+color: white ;
+border-radius:25px;
+font-weight:bold;
+}
+  #response {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+
+    
+  }
+  #emoji {
+    display: none;
+    margin-top: 20px;
+    font-size: 50px;  /* Larger size for the emoji */
+  }
+  .after {
+    color :red;
+  }
+  p{
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    color:rgba(255,255,255, .5);
+    font-size: 10px;
+    
+  }
